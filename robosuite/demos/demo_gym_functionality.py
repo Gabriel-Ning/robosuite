@@ -43,7 +43,8 @@ if __name__ == "__main__":
             has_renderer=True,  # make sure we can render to the screen
             reward_shaping=True,  # use dense rewards
             control_freq=20,  # control should happen fast enough so that simulation looks smooth
-        )
+        ),
+        flatten_obs=False
     )
 
     env.reset(seed=0)
